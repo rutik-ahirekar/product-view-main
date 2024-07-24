@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Practice Fifth</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
+
+        <div class="container">
+            <div class="product">
+                <div class="gallery">
+                    <img src="images/image1.png" id="productImg">
+                    <div class="controls">
+                        <span class="btn active"></span>
+                        <span class="btn"></span>
+                        <span class="btn"></span>
+                    </div>
+                </div>
+                <div class="details">
+                    <h1>Casual T-shirt</h1>
+                    <h2>$15.00</h2>
+                    <h3>30% OFF</h3>
+                    <p>Wrangler is an American manufacturer of jeans and other clothing items, particularly workwear.</p>
+                    <form>
+                        <div class="size-section">
+                            <p>Size</p>
+                            <label for="small">
+                                <input type="radio" name="size" id="small">
+                                <span>S</span>
+                            </label>
+                            <label for="medium">
+                                <input type="radio" name="size" id="medium">
+                                <span>M</span>
+                            </label>
+                            <label for="large">
+                                <input type="radio" name="size" id="large">
+                                <span>L</span>
+                            </label>
+                            <label for="x-large">
+                                <input type="radio" name="size" id="x-large">
+                                <span>XL</span>
+                            </label>
+                            <label for="xx-large">
+                                <input type="radio" name="size" id="xx-large">
+                                <span>XXL</span>
+                            </label>
+                        </div>
+                        <div class="color-select">
+                            <p>Color</p>
+                            <label for="red">
+                                <input type="radio" name="color" id="red">
+                                <span class="color-1 color-red"></span>
+                            </label>
+                            <label for="green">
+                                <input type="radio" name="color" id="green">
+                                <span class="color-2 color-green"></span>
+                            </label>
+                            <label for="blue">
+                                <input type="radio" name="color" id="blue">
+                                <span class="color-3 color-blue"></span>
+                            </label>
+                            <label for="pink">
+                                <input type="radio" name="color" id="pink">
+                                <span class="color-4 color-pink"></span>
+                            </label>
+                        </div>
+                        
+                        <div class="quantity-select">
+                            <p>Quantity</p>
+                            <input type="number" value="1">
+                        </div>
+                       
+                        <button>Add To Cart</button>
+                        <button>Buy Now</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="reviews">
+                <h2>Customer Reviews</h2>
+                <div class="review">
+                    <p><strong>Jane Doe</strong>: Great quality t-shirt, fits perfectly!</p>
+                    <p>Rating: ★★★★☆</p>
+                </div>
+                <div class="review">
+                    <p><strong>John Smith</strong>: Comfortable and stylish.</p>
+                    <p>Rating: ★★★★★</p>
+                </div>
+            </div>
+
+            <div class="related-products">
+                <h2>Related Products</h2>
+                <div class="product">
+                    <img src="data:image/jpeg;base64,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" alt="Related Product 1">
+                    <p>V-Neck T-shirt</p>
+                    <p>$12.00</p>
+                </div>
+                <div class="product">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0Zi6Kkwla5wVySuu-q57ROTbDAZgg8e_slg&s" alt="Related Product 2">
+                    <p>Graphic T-shirt</p>
+                    <p>$18.00</p>
+                </div>
+                <div class="product">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMY4r8udtTfC3DFf4NOJAvYHnb3sWgjEtNTg&s" alt="Related Product 3">
+                    <p>Polo Shirt</p>
+                    <p>$20.00</p>
+                </div>
+            </div>
+        </div>
+
+       
+       <script>
+            let productImg = document.getElementById("productImg");
+            let btn = document.getElementsByClassName("btn");
+
+            btn[0].onclick = function(){
+                productImg.src = "images/image1.png";
+                for(let bt of btn){
+                    bt.classList.remove("active");
+                }
+                this.classList.add("active");
+            }
+
+            btn[1].onclick = function(){
+                productImg.src = "images/image2.png";
+                for(let bt of btn){
+                    bt.classList.remove("active");
+                }
+                this.classList.add("active");
+            }
+
+            btn[2].onclick = function(){
+                productImg.src = "images/image3.png";
+                for(let bt of btn){
+                    bt.classList.remove("active");
+                }
+                this.classList.add("active");
+            }
+       </script>
+    </body>
+</html>
